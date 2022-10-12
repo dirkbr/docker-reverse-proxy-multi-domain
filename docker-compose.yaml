@@ -2,13 +2,13 @@ services:
   a:
     build: a
     environment:
-      VIRTUAL_HOST: a.domain.com
+      VIRTUAL_HOST: wolke.fskowi.rwth-aachen.de
     restart: always
   
   b:
     build: b
     environment:
-      VIRTUAL_HOST:  b.domain.com
+      VIRTUAL_HOST:  wiki.fskowi.rwth-aachen.de
     restart: always
   
   nginx-proxy:
