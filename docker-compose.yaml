@@ -10,15 +10,3 @@ services:
     environment:
       VIRTUAL_HOST:  wiki.fskowi.rwth-aachen.de
     restart: always
-  
-  nginx-proxy:
-    image: jwilder/nginx-proxy
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /var/run/docker.sock:/tmp/docker.sock:ro
-
-    restart: always
-    privileged: true
-  
