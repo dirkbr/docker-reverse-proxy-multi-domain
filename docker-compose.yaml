@@ -4,9 +4,13 @@ services:
     environment:
       VIRTUAL_HOST: wolke.fskowi.rwth-aachen.de
     restart: always
+    expose:
+      - "80"
   
   b:
     build: b
     environment:
       VIRTUAL_HOST:  wiki.fskowi.rwth-aachen.de
     restart: always
+    expose:
+      - "80"
